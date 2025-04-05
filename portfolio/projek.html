@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoh Pinterest-like Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: black;
+
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+/* Grid menggunakan teknik CSS columns */
+.grid {
+    padding: 50px;
+    column-count: 3;
+    column-gap: 15px;
+}
+/* Setiap item grid */
+.grid-item {
+    background: transparent;
+    display: inline-block;
+    margin: 0 0 15px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.grid-item img {
+    width: 100%;
+    display: block;
+}
+.grid-item .content {
+    padding: 10px;
+}
+/* Responsif: dua kolom pada layar lebih kecil */
+@media (max-width: 768px) {
+    .grid {
+        column-count: 2;
+    }
+}
+/* Responsif: satu kolom pada layar sangat kecil */
+@media (max-width: 480px) {
+    .grid {
+        column-count: 1;
+    }
+}
+</style>
+</head>
+<body>
+    <header class="navbar">
+        <div>MyPortfolio</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="projek.html">Projek</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- <p>Deskripsi gambar 5</p> -->
+        <div class="grid">
+            <div class="grid-item">
+                <img src="gambar/1.jpg" alt="Gambar 1">
+                <div class="content">
+                 <!-- <p>Deskripsi gambar 5</p> -->
+              </div>
+          </div>
+          <div class="grid-item">
+            <img src="gambar/2.jpg" alt="Gambar 2">
+            <div class="content">
+              <!-- <p>Deskripsi gambar 5</p> -->
+          </div>
+      </div>
+      <div class="grid-item">
+        <img src="gambar/3.jpg" alt="Gambar 3">
+        <div class="content">
+          <!-- <p>Deskripsi gambar 5</p> -->
+      </div>
+  </div>
+  <div class="grid-item">
+    <img src="gambar/4.jpg" alt="Gambar 4">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+</div>
+<div class="grid-item">
+    <img src="gambar/metal2.jpg" alt="Gambar 5">
+    <div class="content">
+    <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+</div>
+<div class="grid-item">
+    <img src="gambar/5.jpg" alt="Gambar 6">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+</div>
+<div class="grid-item">
+    <img src="gambar/6.jpg" alt="Gambar 6">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+</div>
+<div class="grid-item">
+    <img src="gambar/7.jpg" alt="Gambar 6">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+</div>
+<div class="grid-item">
+    <img src="gambar/8.jpg" alt="Gambar 6">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+</div>
+<div class="grid-item">
+    <img src="gambar/9.jpg" alt="Gambar 6">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+</div>
+<div class="grid-item">
+    <img src="gambar/10.jpg" alt="Gambar 6">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+  <div class="grid-item">
+    <img src="gambar/11.jpg" alt="Gambar 6">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+  <div class="grid-item">
+    <img src="gambar/12.jpg" alt="Gambar 6">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+  <div class="grid-item">
+    <img src="gambar/10.jpg" alt="Gambar 6">
+    <div class="content">
+      <!-- <p>Deskripsi gambar 5</p> -->
+  </div>
+</div>
+<!-- <p>Deskripsi gambar 5</p> -->
+</div>
+</div>
+</body>
+</html>
